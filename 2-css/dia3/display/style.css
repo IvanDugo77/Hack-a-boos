@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  border: 5px solid black
+}
+
+span{
+  color: blue;
+}
+/* Bloque */
+/* Control total sobre dimensiones, margin y padding. El borde siempre es rectangular */
+/* Provoca saltos de linea, no puede tener elementos al lado */
+p{
+
+  border: 1px solid ;
+  width: 20rem;
+  height: 10rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+/* linea */
+/* No tenemos control sobre las dimensiones. Margin y padding limitados. El borde se puede cortar */
+/* No provoca saltos de linea, puede tener elementos al lado */
+span{
+  border: 1px solid;
+
+  width: 20rem; /* no funciona */
+  height: 10rem; /* no funciona */
+  margin: 2rem; /* solo horizontal */
+  padding: 1rem; /* funciona, pero solo desplaza elementos en horizontal */
+}
+
+
+
+#block *{
+ display: block;
+}
+
+
+#inline{
+  height: 15rem;
+  padding: 5rem;
+}
+
+#inline *{
+  display: inline;
+}
+
+
+/* INLINE-BLOCK */
+/* Control total sobre dimensiones, margin y padding. El borde siempre es rectangular */
+/* No provoca saltos de linea, puede tener elementos al lado */
+#inline-block *{
+  display: inline-block;
+}

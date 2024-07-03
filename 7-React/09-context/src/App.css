@@ -1,0 +1,77 @@
+body {
+  background-color: #292730;
+  color: white;
+  min-height: 100vh;
+}
+
+.App header {
+  background-color: #767286;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+span.userSection {
+  display: flex;
+}
+
+.App main {
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.App main.nigth {
+  padding: 20px;
+  background-color: #292730;
+}
+
+form.loginregistro {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+p.error {
+  color: red;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+}
+
+.products .product,
+.characters .character {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  vertical-align: top;
+}
+
+.products .product h3,
+.characters .character h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.destacado {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}

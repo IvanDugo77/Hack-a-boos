@@ -1,0 +1,13 @@
+img {
+  float: right;
+}
+
+blockquote {
+  float: left;
+  height: 15rem;
+  border: 1px solid;
+}
+
+#no-fluye {
+  clear: both;
+}

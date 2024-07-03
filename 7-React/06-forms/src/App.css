@@ -1,0 +1,30 @@
+body {
+  background-color: #292730;
+  color: white;
+  min-height: 100vh;
+}
+
+.App header {
+  background-color: #767286;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+span.userSection {
+  display: flex;
+}
+
+.App main {
+  padding: 20px;
+}
+
+form.loginregistro {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+p.error {
+  color: red;
+}

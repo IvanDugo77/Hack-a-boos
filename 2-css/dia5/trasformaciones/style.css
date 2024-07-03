@@ -1,0 +1,49 @@
+p {
+  border: 1px solid;
+  padding: 1rem;
+  background-color: rgb(203, 242, 255);
+  height: 7rem;
+  width: 7rem;
+}
+
+#translate {
+  /* Positivo: hacia la derecha y abajo */
+  /* Negativo: hacia la izquierda y arriba */
+  transform: translate(2rem, -2rem);
+}
+
+#rotate {
+  /* Positivo: sentido horario */
+  /* Negativo: setido antihorario */
+
+  transform: rotate(-30deg);
+}
+
+#scale {
+  /* Por defecto 1 */
+  /* Mas grande se estira, más pequeño hasta 0, encoge */
+  /* En negativo da la vuelta */
+  transform: scale(-1, 1.5);
+}
+
+#skew {
+  transform: skew(20deg, 10deg);
+}
+
+section {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+section p {
+  transform: rotate(90deg);
+}
+
+#center {
+  transform-origin: center /* por defecto */;
+}
+
+#bottomleft {
+  transform-origin: bottom left;
+}

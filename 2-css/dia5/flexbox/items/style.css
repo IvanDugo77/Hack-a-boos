@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: lightcyan;
+  border: 1px solid black;
+
+  height: 10rem;
+  width: 10rem;
+}
+
+/* //// */
+
+body {
+  display: flex;
+  align-items: center;
+  /*   flex-direction: column; */
+
+  height: 100vh;
+}
+
+div:nth-child(3) {
+  /* Saltarse la alineacion en eje secundario */
+  align-self: flex-start;
+}
+
+div:nth-child(1) {
+  /* Que no se encoja */
+  flex-shrink: 0; /* por defecto 1 */
+}
+
+div:nth-child(2) {
+  /* Que se encoja más */
+  flex-shrink: 10; /* Cuanto más grande, antes y más rapido encoge */
+}
+
+div:nth-child(4) {
+  /* Que crezca */
+  flex-grow: 1; /* por defecto 0 */
+}
+
+div:nth-child(5) {
+  /* Que crezca mas */
+  flex-grow: 2;
+}
+
+/* Orden */
+/* por defecto 0 */
+
+div:nth-child(4) {
+  order: 2;
+}
+
+div:nth-child(2) {
+  order: -1;
+}
+
+div:nth-child(3) {
+  order: 1;
+}

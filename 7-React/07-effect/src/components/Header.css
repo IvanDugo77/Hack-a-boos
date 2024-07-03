@@ -1,0 +1,13 @@
+header.cabecera {
+  position: fixed;
+  background-color: #fff;
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+header.cabecera.not-up {
+  padding: 3px;
+}

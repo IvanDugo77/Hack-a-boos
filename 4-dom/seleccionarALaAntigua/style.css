@@ -1,0 +1,11 @@
+#unico {
+  background-color: aqua;
+}
+
+.especial {
+  color: blue;
+}
+
+body > p {
+  color: blueviolet;
+}

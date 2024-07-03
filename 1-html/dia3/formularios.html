@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+  </head>
+  <body>
+    
+    <header>
+      <h1>Formularios</h1>
+    </header>
+
+    <main>
+      <form>
+
+        <ul>
+          <li>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre" value="Zoe" autofocus required minlength="3" maxlength="5" autocomplete="off"/>
+          </li>
+          <li>
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass">
+          </li>
+          <li>
+            <label for="text">Textarea</label>
+            <textarea name="text" id="text" cols="30" rows="10">Hola</textarea>
+          </li>
+
+          <li>
+            <label for="select">Select</label>
+            <select name="select" id="select">
+              <option>Opción 1</option>
+              <option value="">Opción 2</option>
+              <option value="15">A Coruña</option>
+            </select>
+          </li>
+
+          <li>
+            <fieldset>
+              <legend>Género</legend>
+
+              <ul>
+                <li>
+                  <input type="radio" id="man" name="gender" value="man">
+                  <label for="man">Hombre</label>
+                </li>
+                <li>
+                  <input type="radio" id="woman" name="gender" value="woman">
+                  <label for="woman">Mujer</label>
+                </li>
+                <li>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Otro</label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          
+          <li>
+            <input type="search">
+          </li>
+
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail">
+          </li>
+
+          <li>
+            <label for="tel">Telefono</label>
+            <input type="tel" id="tel">
+          </li>
+
+          <li>
+            <label for="num">Numero</label>
+            <input type="number" id="num" min="-10" max="10" step="5">
+          </li>
+
+          <li>
+            <label for="range">Rango</label>
+            <input type="range" name="" id="range" min="-10" max="10" step="5">
+          </li>
+          <li>
+            <input type="checkbox" name="" id="check">
+            <label for="check">Checkbox</label>
+          </li>
+        </ul>
+        
+
+        
+
+
+        <button type="submit">Enviar</button>
+        <button type="button">Click!</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </main>
+  </body>
+</html>

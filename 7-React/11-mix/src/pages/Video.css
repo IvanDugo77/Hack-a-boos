@@ -1,0 +1,30 @@
+video {
+  width: 80vw;
+  margin: auto;
+}
+
+.player {
+  position: relative;
+}
+
+.player .controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.player .controls .play-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+}

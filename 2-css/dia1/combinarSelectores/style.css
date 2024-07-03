@@ -1,0 +1,63 @@
+/* DESCENDIENTES */
+
+section p{
+  color: blue
+}
+
+
+section div p{
+  text-decoration: underline;
+}
+
+
+body header{
+ /* selecciona todos los headers */
+
+ color: blue;
+}
+
+/* HIJOS DIRECTOS */
+
+section > p{
+  font-style: italic;
+}
+
+
+
+
+body > header {
+  /* selecciona el header principal (esta directamente en el body) */
+  color: blueviolet
+}
+
+body > *{
+  /* todos los hijos directos de body */
+}
+
+/* HERMANOS ADYACENTES (justo despues) */
+
+#check + label{
+  font-style: italic
+}
+
+input[type="checkbox"] + label{ 
+  color: rebeccapurple;
+}
+
+
+:checked + label{
+  text-decoration: line-through;
+}
+
+
+/* HERMANOS NO CONSECUTIVOS */
+
+section > p:nth-child(2) ~ {
+  border: 1px solid black
+}
+
+
+plate{
+  color: red;
+}
+

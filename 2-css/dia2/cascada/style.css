@@ -1,0 +1,88 @@
+/* IMPORTANCIA */
+
+.titulo{
+  /* La importancia es la unica forma de sobreescribir estilos en linea, pero no hay que abusar de ella */
+  color: blue !important;
+
+  text-decoration: underline;
+}
+
+.principal{
+  color: red;
+
+  font-family: sans-serif;
+}
+
+/* ESPECIFICIDAD */
+
+/* Elementos, pseudoelementos = 0,0,1 */
+
+p{
+  color: blueviolet;
+}
+
+section p{
+  color: aqua;
+}
+
+/* clases, pseudclases, atributos = 0,1,0 */
+
+.importante{
+  color: black;
+
+  font-weight: bold;
+}
+
+
+.importante:nth-child(3){
+  color: brown;
+}
+
+p.importante:nth-child(3){
+  color: magenta;
+}
+
+
+/* id = 1, 0, 0 */
+
+#unico{
+  color: chartreuse;
+}
+
+/* #div */ #divp{
+  color: blue;
+}
+
+#div p{
+  color: red;
+}
+
+
+/* ORDEN */
+/* En caso de empate en especificidad, gana el de más abajo */
+
+.especial{
+  color: blue;
+}
+
+
+
+main{
+  border: 2px dotted red;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: red;
+
+  border: 3px dashed blue;
+
+
+
+/* Asi mal */
+/*   border-top-left-radius: 5rem;
+  border-radius: 1rem; */
+
+  /* Asi bien */
+  border-radius: 1rem;
+  border-top-left-radius: 5rem;
+}
+

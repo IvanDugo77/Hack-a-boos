@@ -1,0 +1,41 @@
+.characters .entry {
+  display: inline-block;
+  height: 180px;
+  width: 160px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.characters .entry h2 {
+  font-size: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.characters img {
+  height: 150px;
+  width: 150px;
+}
+
+.character label {
+  display: block;
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+.character label span {
+  display: inline-block;
+  width: 100px;
+}
+
+.character .image-picker {
+  display: none;
+}
+
+.character img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

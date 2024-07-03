@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tablas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+    <main>
+
+
+    <section>
+      <h2>Tabla básica</h2>
+
+      <table border="1">
+        <!-- NO debería llevar al atributo border. Cuando termine de hacer la tabla lo borraré -->
+        <tr>
+          <th></th>
+          <th scope="col">Columna1</th>
+          <th>Columna 2</th>
+          <th>Columna 3</th>
+        </tr>
+        <tr>
+          <th scope="row">Fila 1</th>
+          <td>dato1</td>
+          <td>dato2</td>
+          <td>dato3</td>
+        </tr>
+        <tr>
+          <th>Fila 2</th>
+          <td></td>
+          <td>dato2</td>
+          <td></td>
+        </tr>
+      </table>
+
+    </section>    
+
+    <section>
+      <h2>Tabla compleja</h2>
+
+      <table border="1">
+        <tr>
+          <th></th>
+          <th>Columna 1</th>
+          <th>Columna 2</th>
+          <th>Columna 3</th>
+        </tr>
+        <tr>
+          <th>Fila 1</th>
+          <td colspan="2">dato 1</td>
+          <td rowspan="3">dato 2</td>
+        </tr>
+        <tr>
+          <th>Fila 2</th>
+          <td>dato 1</td>
+          <td>dato 2</td>
+
+        </tr>
+        <tr>
+          <th>Fila 3</th>
+          <td colspan="2" rowspan="2">dato 1</td>
+        </tr>
+        <tr>
+          <th>Fila 4</th>
+          <td>dato 1</td>
+        </tr>
+      </table>
+
+    </section>
+
+    <section>
+      <h2>Tabla semántica</h2>
+
+      <table border="1">
+        <caption>Titulo de la tabla</caption>
+
+        <thead>
+                  <tr>
+          <th></th>
+          <th>Columna 1</th>
+          <th>Columna 2</th>
+          <th>Columna 3</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+          <th scope="row">Fila 1</th>
+          <td>dato1</td>
+          <td>dato2</td>
+          <td>dato3</td>
+        </tr>
+        <tr>
+          <th>Fila 2</th>
+          <td></td>
+          <td>dato2</td>
+          <td></td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th>total</th>
+            <td>total 1</td>
+            <td>total 2</td>
+            <td>total 3</td>
+
+          </tr>
+        </tfoot>
+
+      </table>
+    </section>
+
+    <section>
+      <h2>Ejemplo</h2>
+
+
+      <table border="1">
+        <caption>Horario 2ºA</caption>
+
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Lunes</th>
+          </tr>
+        </thead>
+      </table>
+
+    </section>
+
+  </main>
+  </body>
+</html>

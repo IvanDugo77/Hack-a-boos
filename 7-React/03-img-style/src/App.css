@@ -1,0 +1,13 @@
+img {
+  height: 180px;
+  width: 180px;
+  border: 1px solid black;
+}
+
+.divBackImg {
+  height: 180px;
+  width: 180px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+}

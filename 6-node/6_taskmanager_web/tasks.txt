@@ -1,0 +1,5 @@
+2,DONE,hacer,la,compra
+3,DONE,comprar,pan
+4,PENDING,lavar,la,loza,por,la,noche
+5,PENDING,sacar,lavadora
+8,PENDING,lavarse,los,dientes

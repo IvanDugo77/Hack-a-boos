@@ -1,0 +1,3 @@
+1 DONE dar un paseo
+2 DONE hacer la compra
+3 DONE comprar pan

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: lightcyan;
+  border: 1px solid black;
+
+  height: 10rem;
+  width: 10rem;
+}
+
+/* //////// */
+
+body {
+  height: 100vh;
+
+  /* contenedor */
+  display: flex;
+
+  /* Dirección */
+  /* row | column | row-reverse | column-reverse */
+  flex-direction: row;
+
+  /* Se crean filas/columnas cuando no caben */
+  /* nowrap | wrap | wrap-reverse */
+  flex-wrap: wrap;
+
+  /* Espacio sobrante en eje principal */
+  /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+  justify-content: space-evenly;
+
+  /* Colocar elementos en fila/columna */
+  /* stretch (solo si no tiene medida) | flex-start | flex-end | center | baseline*/
+  align-items: center;
+
+  /* spacio sobrante en eje secundario */
+  /* stretch | flex-start | flex-end | center | space-between | space-around | space-evenly */
+  align-content: space-evenly;
+
+  /* Separacion minima entre elementos */
+  gap: 1rem;
+}
+
+div:nth-child(6) {
+  font-size: 200%;
+  height: 5rem;
+}

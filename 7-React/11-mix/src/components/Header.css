@@ -1,0 +1,13 @@
+.App header {
+  background-color: #767286;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+span.menu,
+span.userSection {
+  display: flex;
+  gap: 8px;
+}

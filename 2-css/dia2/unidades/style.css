@@ -1,0 +1,117 @@
+
+div{
+  border: 1px solid black;
+
+  margin: 2rem;
+
+  padding: 1em;
+}
+
+p{
+  border: 1px solid blue;
+}
+
+div:nth-of-type(1){
+  /* Medida absoluta */
+  width: 160px;
+  height: 160px;
+}
+
+
+/* MEDIDAS RELATIVAS */
+
+div:nth-of-type(2){
+  /* En relación al tamaño de fuente del elemento 
+  Por defecto 1rem*/
+  width: 10em;
+  height: 10em;
+
+   font-size: 1.5rem; 
+}
+
+div:nth-of-type(3){
+  /* En relacion al tamaño de fuente del HTML
+  Por defecto 16px */
+  width: 10rem;
+  height: 10rem;
+}
+
+html{
+  font-size: 10px;
+}
+
+
+div:nth-of-type(4){
+  /* En relación al tamaño por defecto, o al del padre 
+  Para que funcione en altura, el padre debe tener altura fija */
+  height: 20%;
+  width: 20%;
+
+  font-size: 150%;
+}
+
+/*  html{
+  height: 1000px;
+} 
+
+body{
+  height: 50%;
+} */
+
+div:nth-of-type(4) p{
+ width: 50%;
+}
+
+
+div:nth-of-type(5){
+  /* En relación a la altura del viewport */
+  height: 15vh;
+  width: 15vh;
+
+}
+div:nth-of-type(5) p{
+  width: 15vh;
+
+}
+
+
+div:nth-of-type(6){
+  /* En relación al ancho del viewport */
+  height: 20vw;
+  width: 20vw;
+
+}
+
+div:nth-of-type(6) p{
+  width: 50%;
+
+}
+
+div:nth-of-type(7){
+  height: 15vh;
+  width: 20vw;
+}
+
+div:nth-of-type(8){
+  height: 20vw;
+  width: 15vh;
+}
+
+
+
+/* Las siguientes medidas sirven para mantener los tamaños aunque se gire el movil
+
+Podriamos usarlo para definir el tamaño de fuente de HTML y poner el resto de medidas en rem*/
+
+
+div:nth-of-type(9){
+  /* En relacion al eje pequeño */
+  height: 20vmin;
+  width: 20vmin;
+}
+
+div:nth-of-type(10){
+  /* En relacion al eje grande */
+  height: 20vmax;
+  width: 20vmax;
+}

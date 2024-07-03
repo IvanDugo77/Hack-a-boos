@@ -1,0 +1,137 @@
+/* SELECTORES BÁSICOS */
+
+/* Por tipo */
+h1{
+  color: blueviolet
+}
+
+p{
+  color: blue
+}
+
+/* Por clase */
+.importante{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.warning{
+  background: red;
+}
+
+
+/* Por ID */
+#unico{
+  font-size: 1.5rem;
+}
+
+
+/* SELECTORES AVANZADOS */
+
+/* Por atributo */
+[data-author]{
+  font-style: italic;
+}
+
+[class]{
+  border: 1px solid black
+}
+
+[data-author="Zoe"]{ /* valor exacto */
+  font-family: sans-serif;
+}
+
+
+[href^="http"]{ /* Empieza con el valor */
+  font-family: sans-serif;
+}
+
+[href$=".com"]{ /* Termina con el valor */
+  color: aqua;
+}
+
+[href*="wiki"]{ /* Cotiene el valor */
+  font-weight: bold;
+}
+
+
+/* Pseudo-clases */
+
+:checked{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+li:first-child{
+  border: 5px solid blue;
+}
+
+:last-child{
+  border: 2px solid cyan;
+}
+
+p:nth-child(2){
+  text-decoration: underline
+}
+
+
+li:nth-child(even){ /* even = par, odd = imprar */
+  background: rgba(173, 216, 230, 0.61);
+}
+
+p:first-of-type{
+  font-size: 1.4rem;
+}
+
+
+p:not(.importante){
+  text-decoration: line-through;
+}
+
+#especial:link{
+  color: green
+}
+
+#especial:visited{
+  color: rgb(20, 182, 125)
+}
+
+#especial:hover{
+  color: cyan
+}
+
+#especial:focus{
+  color: blue;
+  outline: 2px solid blue
+}
+
+#especial:active{
+  color: magenta
+}
+
+
+/* Pseudo-elementos */
+
+div::first-letter{
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+div::first-line{
+  font-style: italic;
+}
+
+div::selection{
+  background: blueviolet;
+  color: white
+}
+
+
+div::after{
+  content: "Ver más...";
+  color: blue;
+}
+
+a::before{
+  content: "➡️";
+}

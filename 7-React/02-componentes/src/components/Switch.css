@@ -1,0 +1,30 @@
+.switch {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: rgb(201, 201, 201);
+  position: relative;
+  transition: all 0.2s;
+}
+
+.switch::after {
+  content: '';
+  display: inline-block;
+  background-color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 0.2s;
+}
+
+.switch.on {
+  background-color: rgb(23, 211, 23);
+}
+
+.switch.on::after {
+  left: 54px;
+}

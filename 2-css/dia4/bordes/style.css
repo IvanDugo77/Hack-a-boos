@@ -1,0 +1,84 @@
+div {
+  /* grosor, tipo, color (opcional) */
+  border: 1px solid;
+
+  color: blue;
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+
+  border-radius: 3rem;
+}
+
+div:nth-of-type(2) {
+  border-width: 3px;
+
+  border-style: dashed;
+
+  border-color: blueviolet;
+
+  /* Redondeo */
+  border-radius: 3px;
+}
+
+div:nth-child(3) {
+  border-style: dotted dashed;
+
+  border-color: aqua magenta;
+
+  border-width: 2px 5px;
+
+  /* Redondeo */
+  border-radius: 2rem 5rem;
+}
+
+div:nth-child(4) {
+  border-style: dotted dashed groove;
+
+  border-color: aqua magenta blueviolet;
+
+  border-width: 2px 1px 5px;
+
+  /* Redondeo */
+  border-radius: 50%;
+}
+
+div:nth-child(5) {
+  border-style: dotted dashed groove double;
+
+  border-color: aqua magenta blueviolet;
+
+  border-width: 2px 1px 5px 3px;
+
+  border-radius: 1rem 3rem 5rem;
+}
+
+div:nth-child(6) {
+  border-left: 3px double cyan;
+
+  border-right-color: magenta;
+
+  border-bottom-right-radius: 0;
+}
+
+/* div:nth-child(1), div:nth-child(3), div:nth-child(4), div:nth-child(5){
+  border: 1px solid black
+} */
+
+/* div:nth-child(odd), div:nth-child(4){
+  border: 1px solid black
+} */
+
+figure {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,46 @@
+header{
+  color: blue;
+}
+
+main{
+  border: 1px solid rgb(6, 100, 200);
+  color: blueviolet;
+
+  font-family: sans-serif;
+}
+
+#section{
+  color: red;
+}
+
+p{
+  color: magenta;
+}
+
+
+/* Podemos hacer que no se herede lo que debría, pero se herede lo que no debería */
+#reves{
+  color: initial; /* No hereda, tiene el color inicial */
+
+  border: inherit; /* Hereda */
+}
+
+
+/* Como los enlaces tienen estilos propios en el navegador, hay que darles estilos directamente para cambiarlos */
+
+a{
+  color: aqua;
+  text-decoration: none;
+}
+
+a:visited{
+  color: aquamarine;
+}
+
+a:hover{
+  color: blue;
+}
+
+a:active{
+  color: blueviolet;
+}

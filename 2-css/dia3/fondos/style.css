@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  background-color: black;
+  color: white;
+  padding: 2rem;
+
+}
+
+div{
+  border: 1px solid;
+  height: 15rem;
+  width: 15rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+
+div:nth-child(1){
+  background-color: cyan;
+}
+
+div:nth-child(2){
+  background-image: url(https://images.unsplash.com/photo-1665050311197-e6d78e4981e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  
+  /* Cuando usamos una imagen de fondo, deberíamos poner un color parecido de backup */
+  background-color: rgb(153, 180, 118);
+}
+
+div:nth-child(3){
+  background-image: url(https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png);
+
+  background-color: cyan;
+}
+
+div:nth-child(4){
+  background-image: url(https://images.unsplash.com/photo-1665050311197-e6d78e4981e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  
+  background-color: rgb(153, 180, 118);
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+div:nth-child(5){
+  background-image: url(https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png);
+
+  background-color: cyan;
+
+  background-size: contain;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+div:nth-child(6){
+  background-image: url(https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png);
+
+  background-color: cyan;
+
+
+  /* hozontal vertical */
+  /* auto se adapta */
+  background-size: auto 5rem; 
+
+  background-position: bottom right;
+
+  background-repeat: repeat-x;
+
+}
+
+div:nth-child(8){
+  background-image: url(https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png);
+
+  background-color: cyan;
+
+
+  /* hozontal vertical */
+  /* auto se adapta */
+  background-size: auto 5rem; 
+
+  background-position: -1rem -1rem;
+
+  background-repeat: no-repeat;
+
+}

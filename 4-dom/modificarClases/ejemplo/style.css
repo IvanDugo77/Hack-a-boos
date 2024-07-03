@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-principal: rgb(227, 248, 255);
+  --color-secundario: rgb(199, 173, 230);
+  --texto: rgb(0, 36, 119);
+}
+
+html.noche {
+  --color-principal: rgb(3, 0, 85);
+  --color-secundario: rgb(63, 0, 109);
+  --texto: rgb(201, 217, 255);
+}
+
+body {
+  background-color: var(--color-principal);
+}
+
+header {
+  height: 10rem;
+  background-color: var(--color-secundario);
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

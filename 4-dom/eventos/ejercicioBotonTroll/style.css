@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: calc(50vh - 50px);
+  right: calc(50vw - 50px);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

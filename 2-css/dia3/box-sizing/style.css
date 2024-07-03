@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+/*   box-sizing: border-box; */
+}
+
+header{
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+section{
+  border: 5px solid black;
+  margin: 2rem 0;
+  padding: 30px;
+  width: 300px;
+  /* width: 100vw; */
+  height: 200px;
+}
+
+
+#content{
+  box-sizing: content-box /* por defecto */;
+}
+
+#border{
+  box-sizing: border-box;
+}
+

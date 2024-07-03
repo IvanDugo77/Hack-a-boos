@@ -1,0 +1,23 @@
+body{
+  background: blue;    
+  font-family: sans-serif;
+} 
+
+h1{
+  text-decoration:underline;
+}
+
+
+/*
+Comentario 
+
+*/
+
+/* 
+
+selector, selector{
+  propiedad: valor;
+  propiedad: valor;
+}
+
+*/

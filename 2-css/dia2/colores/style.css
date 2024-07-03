@@ -1,0 +1,80 @@
+body{
+  background-color: black;
+  background-image: url(http://source.unsplash.com/random);
+}
+
+div{
+  border: 1px solid black;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+}
+
+#nombre{
+  background-color: lime;
+}
+
+
+
+#rgb{
+  /* rgb(rojo, verde, azul) */
+  /* 0 - 255 */
+  background-color: rgb(255, 121, 255);
+}
+
+
+#rgba{
+  /* rgba(rojo, verde, azul, alfa) */
+  /* alfa 0 - 1 */
+  background-color: rgba(255, 0, 255, 0.5);
+}
+
+
+#hex{
+  /* #RRVVAA */
+  /* 00 - FF */
+  background-color: #AA00AA;
+
+  /* Cuando los tres colores son un digito duplicado, podemos abreviar: */
+  background-color: #A0A;
+}
+
+
+#hexa{
+  /* #RRVVAATT */
+
+  background-color: #AA00AA99;
+
+  /* Se puede abreviar */
+  background-color: #A0A9;
+}
+
+
+#hsl{
+  /* Hue: tono (0-359), S: saturacion (%), l: luminosidad (%)*/
+
+  background-color: hsl(145, 50%, 40%);
+}
+
+#trans{
+
+  /* Transparente */
+
+  background-color: white;
+  background-image: url("http://source.unsplash.com/200x200");
+  color: transparent;
+}
+
+
+body{
+  color: blue;
+}
+
+#current{
+
+  /* El color del texto */
+
+  background-color: white;
+
+  border: 5px solid currentColor
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid;
+  /*   height: 5rem;
+  width: 5rem; */
+
+  background-color: aqua;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+
+  gap: 10px;
+
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+
+  /* Distribuir el espacio del contenedor */
+  /* start | end | center | space-between | space-around | space-evenly */
+
+  justify-content: space-evenly; /* horizontal */
+
+  align-content: space-between;
+
+  /* abreviado */
+  place-content: space-between space-evenly;
+
+  /* Colocar elemento dentro de la celda */
+  /* stratch | start | end | center */
+
+  justify-items: center;
+  align-items: center;
+
+  /* abreviado */
+  place-items: center center;
+}

@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "f23ece2f-e553-4adb-bb66-9d56f319fb30",
+		"name": "Diario de viajes Contenido",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver todas las entradas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/entries/?order=place&direction=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						""
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "place"
+						},
+						{
+							"key": "direction",
+							"value": "DESC"
+						},
+						{
+							"key": "search",
+							"value": "Lorem",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver una entrada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/entries/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir una entrada (sin imagen)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"place\": \"Coristanco\",\n    \"description\": \"Un sitio moi bonito y costero\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/entries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir una entrada (con imagen)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "place",
+							"value": "Montañas de Bergantilos",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Paseos en trineo por Malpica",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/berto/Downloads/malpica.jpg"
+						},
+						{
+							"key": "image2",
+							"type": "file",
+							"src": "/Users/berto/Downloads/eberhard-grossgasteiger-NUHuaz6ajyQ-unsplash.jpg"
+						},
+						{
+							"key": "image3",
+							"type": "file",
+							"src": "/Users/berto/Downloads/NYC.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/entries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar una entrada (no modifica imágenes)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date\": \"2020-07-01T18:13:26.863Z\",\n    \"description\": \"Tour por la costa este de EEEEEEUUUUUUU\",\n    \"place\": \"Buuffff\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/entries/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar imagen de entrada",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/entries/13/images/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"13",
+						"images",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir imagen a una entrada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/berto/Downloads/foto-nueva.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/entries/13/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"13",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar una entrada (con votos e imágenes)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/entries/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Votar una entrada",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vote\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/entries/10/votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"10",
+						"votes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver votos de una entrada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/entries/10/votes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"entries",
+						"10",
+						"votes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

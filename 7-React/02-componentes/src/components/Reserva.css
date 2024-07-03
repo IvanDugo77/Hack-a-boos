@@ -1,0 +1,9 @@
+.reserva {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  background-color: rgb(112, 112, 243);
+  color: white;
+  cursor: pointer;
+}

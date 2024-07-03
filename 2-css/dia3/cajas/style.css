@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  color: white;
+  background-color: black;
+  padding: 2rem;
+}
+
+main{
+  text-align: center;
+}
+
+
+
+section{
+  border-width: 5px;
+  border-style: solid;
+  border-color: blueviolet;
+
+  border: 5px solid blueviolet;
+
+  /* border-top, border-bottom, border-left, border-right */
+  /* border-top: 2px dotted blue;
+
+  border-bottom: 5px double cyan; */
+
+  /* TAMAÑO */
+  width: 320px; /* ancho */
+  height: 200px;
+
+
+
+  /* Truco para centrar en horizontal: margin: auto; */
+  margin: 1rem auto;
+
+}
+
+article{
+  border: 1px solid black;
+}
+
+#margin article{
+  /* 1 = 4 lados */
+  margin: 1rem ;
+
+  /* 2 = vertical | horizontal */
+  margin: 1rem 2rem;
+
+  /* 3 = arriba lados abajo */
+  margin: 1rem 2rem 0.5rem;
+
+  /* 4 = arriba derecha abajo izquierda */
+  margin: 2rem 3rem 1rem 0.5rem;
+
+  margin-top: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+
+}
+
+#padding article{
+   padding: 2rem 3rem 1rem 0.5rem;
+}
+
+button{
+  border: 3px outset gray
+}
+
+button:active{
+  border-style: inset
+}

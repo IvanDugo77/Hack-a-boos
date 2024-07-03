@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  align-content: center;
+}
+
+div {
+  flex-shrink: 0;
+  height: 15rem;
+  width: 15rem;
+  background-color: aqua;
+  background-image: url(http://source.unsplash.com/random);
+  background-size: cover;
+}

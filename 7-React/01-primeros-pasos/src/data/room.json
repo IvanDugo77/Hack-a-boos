@@ -1,0 +1,7 @@
+{
+  "title": "Suite Deluxe",
+  "description": "Disfrute de nuestra habitación más elegante...",
+  "available": false,
+  "price": 299.91,
+  "services": ["Mueble bar", "TV panorámica", "Jacuzzi", "Vistas a la playa"]
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enlaces</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enlaces</h1>
+    </header>
+    <main>
+      <p>La etiqueta es "a", de anchor</p>
+      <a href="https://www.google.com/">Google</a>
+
+
+
+      <section>
+        <h2 id="absolutas">Rutas absolutas</h2>
+
+        <h3 id="local">Local</h3>
+        <p>Van desde la raíz del servidor (/)</p>
+        <p>Siempre empiezan por /</p>
+        <a href="/atributos.html">Atributos</a>
+
+        <a href="/supermercado.html">Supermercado</a>
+
+
+        <a href="/">Inicio</a>
+
+
+        <h3 id="externas">Externas</h3>
+        <p>Van desde la raíz de otro servidor</p>
+        <p>Siempre empiezan por el protocolo (http:// o https://)</p>
+
+        <p>Con el atributo target con valor "_blank" se abre en una pestaña nueva</p>
+
+        <a target="_blank" href="https://www.google.com/">Google</a>
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">Wikipedia</a>
+      </section>
+
+      <section>
+        <h2 id="relativas">Rutas relativas</h2>
+        <p>Van desde el punto actual</p>
+
+        <a href="atributos.html">Atributos</a>
+
+        <a href="carpeta1/test1.html">Test 1</a>
+        <a href="carpeta1/carpeta2/test2.html">Test 2</a>
+
+        <p>La carpeta actual es "."</p>
+        <p>La carpeta padre es ".."</p>
+        <a href="./atributos.html">Atributos</a>
+
+      </section>
+
+      <section>
+        <h2>A elementos</h2>
+        <p>Para apuntar a un elemento se usa # seguida del id del elemento</p>
+
+        <a href="#absolutas">Absolutas</a>
+        <a href="#local">local</a>
+        <a href="#externas">Externas</a>
+        <a href="#relativas">Relativas</a>
+
+        <p>Pueden apuntar a elementos dentro de otros documentos, incluso externos</p>
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTML#Elements">Elementos de HTML en Wikipedia</a>
+
+        <p>Para volver arriba ponemos solo #</p>
+
+        <a href="#">Volver arriba</a>
+
+
+      </section>
+
+    </main>
+  </body>
+</html>

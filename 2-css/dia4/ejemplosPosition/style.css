@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --colorPrincipal: rgb(0, 45, 85);
+  --colorSecundario: rgb(238, 227, 255);
+  --colorDetalle: rgb(99, 0, 164);
+  --colorDetalle2: rgba(255, 255, 255, 0.199);
+
+  color: var(--colorPrincipal);
+}
+
+html.dark {
+  --colorPrincipal: rgb(170, 198, 255);
+  --colorSecundario: rgb(42, 0, 106);
+  --colorDetalle: rgb(208, 138, 255);
+  --colorDetalle2: rgba(0, 0, 0, 0.199);
+}
+
+html.bw {
+  --colorPrincipal: rgb(0, 0, 0);
+  --colorSecundario: rgb(255, 255, 255);
+  --colorDetalle: rgb(120, 120, 120);
+  --colorDetalle2: rgba(255, 255, 255, 0.199);
+}
+
+body {
+  background-color: var(--colorSecundario);
+}
+
+header {
+  background: var(--colorPrincipal);
+  color: var(--colorSecundario);
+  text-align: center;
+
+  /* Si tiene position static (por defecto) no afecta el z-index */
+  /*   position: relative;
+  z-index: 1; */
+}
+
+h1 {
+  padding: 3rem;
+}
+
+main {
+  height: 200vh;
+
+  --colorPrincipal: rgb(0, 0, 0);
+}
+
+/* section {
+  color: var(--colorPrincipal);
+} */
+
+h2 {
+  color: var(--colorPrincipal);
+}
+
+nav {
+  background-color: var(--colorDetalle);
+  position: sticky;
+  top: 0;
+
+  z-index: 1;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav a {
+  padding: 1rem;
+  display: inline-block;
+  color: var(--colorSecundario);
+  text-decoration: none;
+  font-weight: bold;
+
+  border-right: 1px solid;
+}
+
+nav a:hover {
+  background-color: var(--colorDetalle2);
+}
+
+#volver {
+  position: fixed;
+  right: 0;
+  top: 4rem;
+
+  border: 1px solid var(--colorSecundario);
+
+  background-color: var(--colorPrincipal);
+  color: var(--colorSecundario);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}

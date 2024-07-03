@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Truco para que un elemento absolute sea relativo a otro sin modificarlo: */
+  /* position: relative; */
+
+  height: 250vh;
+  width: 250vw;
+}
+
+div {
+  border: 1px solid black;
+  height: 10rem;
+  width: 10rem;
+
+  background-color: rgba(173, 216, 230, 0.676);
+
+  position: static; /* por defecto */
+}
+
+#relative {
+  background-color: lightcoral;
+
+  /* Se mueve respecto a su posición original */
+  /* Mantiene su espacio original */
+  position: relative;
+
+  /* Top gana a bottom y left a right */
+  top: -3rem;
+  left: 15rem;
+  bottom: -2rem;
+  right: 20rem;
+}
+
+#relative p {
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#absolute {
+  background-color: rgba(144, 238, 144, 0.845);
+
+  /* Pierde su espacio original, lo ocupan los elemntos de abajo */
+  /* Relativo a su padre mas cercano con position distinta de static */
+  /* Si no hay, en relacion al viewport */
+  position: absolute;
+
+  /* Si tiene medida definida ganan top y left */
+  top: 2rem;
+  bottom: 0rem;
+  left: 5rem;
+  right: 0rem;
+
+  /* Si no tiene medida, aplican las 4 */
+  /*  height: initial;
+  width: initial; */
+}
+
+#absolute p {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#fixed {
+  background-color: lightgoldenrodyellow;
+
+  /* En relacion al viewport */
+  /* Si se hace scroll se mantiene fijo */
+  position: fixed;
+
+  /* Igual que absolute */
+  right: 2rem;
+  bottom: 2rem;
+}
+
+#fixed p {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#sticky {
+  background-color: lightpink;
+  position: sticky;
+
+  top: 1rem;
+  left: 0;
+
+  overflow: auto;
+}
+
+#sticky p {
+  background-color: aliceblue;
+  position: sticky;
+  top: 0;
+}
+
+#sticky aside {
+  height: 20rem;
+}

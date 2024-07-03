@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body > header{
+  background-color: black;
+}
+
+#peli1 > h2, #peli1 h3{
+  color: rgb(109, 2, 80);
+}
+
+#peli2 > h2, #peli2 h3{
+  color: rgb(1, 87, 1);
+}
+
+h2{
+  font-family: sans-serif;
+}
+
+body > aside > header h2{
+  text-decoration: underline;
+}
+
+p{
+  margin: 1rem
+}
+
+p:last-of-type{
+  margin-bottom: 2rem;
+}
+
+
+.sinopsis{
+  font-family: sans-serif;
+}
+
+body>header a{
+  color: white;
+text-decoration: none;
+}
+
+body>header>nav a{
+  background-color: gray;
+  display: inline-block;
+padding: 0.5rem;
+}
+
+body>header>nav a:hover{
+  background-color: darkgray;
+}
+
+/* HEADER */

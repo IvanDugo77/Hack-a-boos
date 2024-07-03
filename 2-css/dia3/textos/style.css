@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,400;0,900;1,100&display=swap');
+
+body{
+  background-color: lightblue;
+}
+
+header{
+  /* color */
+  color: blueviolet;
+
+  /* tipografia */
+  font-family: 'Press Start 2P', cursive, sans-serif;
+
+  /* Tamaño */
+  font-size: 1rem;
+
+  /* tranformacion (mayusculas o minusculas) */
+  text-transform: uppercase;
+
+
+  /* decoracion */
+  text-decoration: underline overline;
+  text-decoration-color: blue;
+  text-decoration-style: dashed;
+
+
+  /* sombra */
+  /* deplazamiento horizontal | desplazamiento vertical | difusion | color */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.174);
+
+
+  /* Alineación: left, center, right, justify */
+  text-align: center;
+}
+
+
+p{
+
+  /* tipografia */
+  font-family: Roboto, sans-serif;
+
+  /* cursiva o no */
+  font-style: italic;
+
+
+  /* alto de linea */
+  /* Numero sin unidad. Por defecto 1.2 */
+  line-height: 2;
+
+  /* Tamaño de los espacios */
+  word-spacing: 1rem;
+
+  /* Espacio entre letras */
+  letter-spacing: -2px;
+}
+
+.important{
+  color:blue;
+  
+  /* grosor (negrita, fina o normal */
+  font-weight: 700;
+
+  /* cursiva o no */
+  font-style: normal;
+
+  /* decoracion */
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
+
+.error{
+/*   text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: red; */
+
+
+  text-decoration: line-through wavy red;
+}
